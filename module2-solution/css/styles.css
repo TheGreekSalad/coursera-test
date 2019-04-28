@@ -1,0 +1,84 @@
+
+/********** Base styles **********/
+
+/***** classes *****/
+* {
+  box-sizing: border-box;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  outline: 1px solid black;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33.33%;
+}
+
+.desciption {
+  margin-top: 35px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.box{
+  border: 1px solid black;
+  background-color: gray;
+  position: relative;
+  margin: 10px;
+}
+
+.col-lg-4, .col-lg-6, .col-lg-12, .col-md-4, .col-md-6, .col-md-12, .col-sm-12 {
+  float: left;
+}
+
+/***** Ids *****/
+
+#t1 {
+  background-color: #A52A2A;
+}
+#t2 {
+  background-color: #DEB887;
+}
+#t3 {
+  background-color: #5F9EA0;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+}
